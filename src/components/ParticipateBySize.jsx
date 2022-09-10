@@ -22,7 +22,7 @@ const ParticipateBySize = () => {
                   <h1>{data.teamSize}</h1>
                   <p>Team Size</p>
                 </div>
-                <h2>{data.price}</h2>
+                <h2>₹{data.price}</h2>
                 <h4>Contribution</h4>
               </div>
             );

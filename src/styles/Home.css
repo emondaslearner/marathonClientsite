@@ -43,7 +43,7 @@
 .participateMain {
   width: 100%;
   height: 85vh;
-  background: url("./images/Rectangle 8412.svg");
+  background: url("../images/Rectangle 8412.svg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -237,7 +237,7 @@
 .vector{
   width:100%;
   height: 100vh;
-  background-image:url('./images/Vector7.svg');
+  background-image:url('../images/Vector7.svg');
   background-repeat: no-repeat;
   background-size: cover;
   z-index:99;

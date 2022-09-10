@@ -1,21 +1,13 @@
-import './App.css';
-import AboutMarathon from './components/AboutMarathon';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Offers from './components/Offers';
-import ParticipateBySize from './components/ParticipateBySize';
-import Project from './components/Project';
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import Home from './pages/Home';
 
 function App() {
   return (
-    <>
-      <Header />
-      <AboutMarathon />
-      <Offers />
-      <ParticipateBySize />
-      <Project />
-      <Footer />
-    </>
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
   );
 }
 

@@ -10,10 +10,14 @@ const AboutMarathon = () => {
         setData(data[0]);
       });
   }, []);
+
+  function UnsafeComponent({ html }) {
+    return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  }
   return (
     <div className="aboutMarathon">
       <p>
-        {data && data.marathonInformation}
+        {data && <UnsafeComponent html={data.marathonInformation} />}
       </p>
     </div>
   );
