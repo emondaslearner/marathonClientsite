@@ -1,38 +1,480 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  width: 100%;
+  padding: 7px 2.5%;
+  background-color: #fc916a;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .logo {
+  width: 190px;
+  background-color: white;
+  padding: 5px 0;
+  padding-left: 8px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header .logo img.logo1 {
+  width: 35px;
+  height: auto;
+}
+.header .logo img.logo2 {
+  width: 100px;
+  height: auto;
+  margin-left: 30px;
+}
+.header .marathonDate {
+  width: 85%;
+  min-height: 100%;
+  justify-content: flex-end;
   align-items: center;
+}
+.header .marathonDate h1 {
+  font-size: 26px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-weight: 400;
+}
+.header .marathonDate h1 span {
+  font-weight: 700;
+  font-size: 30px;
+}
+.participateMain {
+  width: 100%;
+  height: 85vh;
+  background: url("./images/Rectangle 8412.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.participateBody {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+}
+.participateBody h1 {
+  font-size: 70px;
+  color: #fc916a;
+}
+
+.participateBody h1 span {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.participateBody button {
+  background-color: #fc916a;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: 0.3s all ease;
+  margin-top: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.participateBody button:hover {
+  border: 2px solid #fc916a;
+  background: none;
+  color: #fc916a;
+  margin-top: 30px;
+}
+.aboutMarathon {
+  width: 70%;
+  margin: 70px auto;
+  color: #436073;
+}
+.aboutMarathon p {
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+}
+.marathonOffer h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #fc916a;
+}
+.marathonOffer .offers {
+  display: flex;
+  margin-top: 60px;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.marathonOffer .offers .offer {
+  width: 40%;
+  display: flex;
+  margin: 2% auto;
+}
+.marathonOffer .offers .offer div:first-child {
+  width: 20%;
+  background-color: #ffebe3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.marathonOffer .offers .offer div:last-child {
+  width: 75%;
+  margin-left: 5%;
+}
+.marathonOffer .offers .offer div:last-child p {
+  color: #436073;
+  font-size: 14px;
+}
+.participateBySize > h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #fc916a;
+  margin-top: 30px;
+}
+.participateBySize .packages {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:50px;
+  margin-bottom:30px;
+}
+.participateBySize .packages .package {
+  width: 25%;
+  margin: auto;
+  background-color: #ffebe3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  border-radius: 20px;
+}
+.participateBySize .packages .package h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #fc916a;
+}
+.participateBySize .packages .package p{
+  font-size:14px;
+  text-align: center;
+  color: #436073;
+}
+.participateBySize .packages .package div{
+  width:70%;
+  margin: auto;
+  border-bottom:1px solid rgba(67, 96, 115, 0.18);
+  padding-bottom:5px;
+}
+.participateBySize .packages .package h2{
+  margin-top:20px;
+  color: #436073;
+  font-size:25px;
+}
+.participateBySize .packages .package h4{
+  color: #436073;
+}
+.participateBySize p{
+  color:#436073;
+  width:50%;
+  text-align:center;
+  margin:auto;
+  font-size:14px;
+}
+.projects{
+  display: flex;
+  width:85%;
+  margin: auto;
+  flex-wrap: wrap;
+  z-index:9;
+}
+.projects .project{
+  width:34%;
+  margin: auto;
+  margin-top:50px;
+}
+.projects .project>div{
+  margin: auto;
+  width:80px;
+  height: 80px;
+  border-radius:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffebe3;
+}
+.projects .project p{
+  font-size:14px;
+  text-align: center;
+  color: #436073;
+}
+.projects .project h3{
+  text-align: center;
+  margin:7px 0;
+  color: #fc916a;
+}
+.projects .ourProject{
+  width: 150px;
+  height: 150px;
+  border-radius:50%;
+  color: #fc916a;
+  background-color: #ffebe3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  margin:40px 65px;
+}
+.projects .ourProject h1{
+  font-size:20px;
+}
+.ProjectHeading{
+  display:none;
+}
+.vector{
+  width:100%;
+  height: 100vh;
+  background-image:url('./images/Vector7.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index:99;
+  margin-top:-150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vector img{
+  width:70%;
+  margin-top:80px;
+}
+.footerParticipateBody{
+  backdrop-filter:none;
+  background: none;
+  margin:0;
+  padding:0;
+  margin-bottom:30px;
+}
+.footerParticipateBody button:hover{
+  margin-top:20px;
+}
+.footerParticipateBody h1{
+  color:#436073;
+}
+.footerParticipateBody h1 span{
+  color:#436073;
+}
+.footer{
+  width:100%;
+  background-color: #436073;
+  display:flex;
+  padding:20px 0;
+  overflow: hidden;
+  flex-wrap:wrap;
+}
+.footer p{
+  display: flex;
+  color: white;
+  width:33%;
+  justify-content: center;
+}
+.footer p img{
+  width:20px;
+}
+@media screen and (max-width: 1050px) {
+  .projects .ourProject{
+    margin:40px 55px;
   }
-  to {
-    transform: rotate(360deg);
+  .projects{
+    width:95%
+  }
+  .projects .project{
+    width:34%;
+  }
+  .marathonOffer .offers {
+    width: 90%;
+  }
+  .marathonOffer .offers .offer div:last-child p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .vector{
+    height: 80vh;
+  }
+  .projects .ourProject{
+    width:130px;
+    height:130px;
+  }
+  .participateBySize>h1{
+    font-size:22px;
+  }
+  .participateBySize .packages{
+    flex-wrap: wrap;
+    width:90%;
+  }
+  .participateBySize .packages .package {
+    width:30%;
+  }
+  .participateBody h1 {
+    font-size: 50px;
+  }
+  .header .logo {
+    padding-left: 4px;
+  }
+  .header .marathonDate {
+    width: 80%;
+  }
+  .header .marathonDate h1 {
+    font-size: 20px;
+  }
+  .header .marathonDate h1 span {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer p{
+    width:50%;
+    margin: auto;
+    margin-top:5px;
+  }
+  .ProjectHeading{
+    display: block;
+    color:#fc916a;
+    font-size:25px;
+    text-align:center;
+    margin:30px 0;
+  }
+  .projects .ourProject{
+    display: none;
+  }
+  .projects .project{
+    width:45%;
+  }
+  .marathonOffer h1 {
+    font-size: 20px;
+  }
+  .aboutMarathon {
+    width: 85%;
+    margin: 40px auto;
+  }
+  .aboutMarathon p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .marathonOffer .offers {
+    margin-top: 40px;
+    width: 95%;
+  }
+  .marathonOffer .offers .offer {
+    width: 48%;
+  }
+  .header .marathonDate h1 {
+    font-size: 18px;
+  }
+  .header .marathonDate h1 span {
+    font-size: 20px;
+  }
+  .participateBySize p{
+    width:80%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .vector{
+    height: 60vh;
+  }
+  .marathonOffer .offers {
+    margin-top: 25px;
+  }
+  .marathonOffer .offers .offer {
+    width: 70%;
+    margin-top: 15px;
+  }
+  .marathonOffer .offers .offer div:last-child p {
+    font-size: 12px;
+  }
+  .participateMain {
+    height: 70vh;
+  }
+  .participateBody h1 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .header {
+    padding: 7px 2%;
+  }
+  .header .marathonDate {
+    width: 75%;
+  }
+  .header .logo {
+    width: 210px;
+  }
+  .header .marathonDate h1 {
+    font-size: 13px;
+  }
+  .header .marathonDate h1 span {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .projects .project{
+    width:75%;
+    margin-top:20px;
+  }
+  .participateBySize .packages{
+    margin-top:30px;
+  }
+  .participateBySize .packages .package {
+    margin-top:20px;
+    width:45%;
+  }
+  .marathonOffer .offers .offer {
+    width: 80%;
+  }
+  .aboutMarathon {
+    width: 90%;
+    margin: 25px auto;
+  }
+  .aboutMarathon p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .participateBody h1 {
+    font-size: 28px;
+  }
+  .header {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .header .logo {
+    width: 100%;
+  }
+  .header .logo div {
+    width: 50%;
+  }
+  .header .logo div:last-child {
+    display: flex;
+    justify-content: center;
+  }
+  .header .logo div:first-child img {
+    width: 40px;
+    margin-left: 15px;
+  }
+  .header .marathonDate {
+    display: block;
+    width: 100%;
+  }
+  .header .marathonDate h1 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width:400px) {
+  .participateBySize .packages .package {
+    width:75%;
   }
 }
